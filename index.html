@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./weather.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="spinner.css" />
+    <!-- Load icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="line"></div>
+    <header>
+      <div class="search-weather">
+        <div class="cloud-icon">
+          <i class="fa fa-cloud"></i>
+        </div>
+        <div class="sun-icon">
+          <i class="fa fa-sun-o"></i>
+        </div>
+        <span>Weather Forecast</span>
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Enter a town, city or country"
+        />
+
+        <button id="searchButton"><i class="fa fa-search"></i></button>
+
+        <button id="getLocation"><i class="fa fa-location-arrow"></i></button>
+      </div>
+    </header>
+    <div class="line"></div>
+    <div class="background">
+      <div id="root"></div>
+      <div class="line"></div>
+      <div class="footer">
+        <footer>
+          <p>&copy; 2023</p>
+        </footer>
+      </div>
+      <div class="line"></div>
+    </div>
+  </body>
+</html>
