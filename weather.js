@@ -63,51 +63,48 @@ async function getWeather(latitude, longitude) {
   const tempArray32 = data.list[32].main.temp;
   const humidityArray32 = data.list[32].main.humidity;
 
-  // function that listens for a click to trigger uses input
-  searchButtonRef.addEventListener("click", async () => {
-    rootRef.innerHTML = getHtml(
-      printCountry,
-      printLocation,
-      printSunrise,
-      printSunset,
-      printTimezone,
+  rootRef.innerHTML = getHtml(
+    printCountry,
+    printLocation,
+    printSunrise,
+    printSunset,
+    printTimezone,
 
-      //Array0 data
-      dateTimeArray0,
-      weatherArray0,
-      iconArray0,
-      tempArray0,
-      humidityArray0,
+    //Array0 data
+    dateTimeArray0,
+    weatherArray0,
+    iconArray0,
+    tempArray0,
+    humidityArray0,
 
-      //Array8 data
-      dateTimeArray8,
-      weatherArray8,
-      iconArray8,
-      tempArray8,
-      humidityArray8,
+    //Array8 data
+    dateTimeArray8,
+    weatherArray8,
+    iconArray8,
+    tempArray8,
+    humidityArray8,
 
-      //Array16 data
-      dateTimeArray16,
-      weatherArray16,
-      iconArray16,
-      tempArray16,
-      humidityArray16,
+    //Array16 data
+    dateTimeArray16,
+    weatherArray16,
+    iconArray16,
+    tempArray16,
+    humidityArray16,
 
-      //Array24 data
-      dateTimeArray24,
-      weatherArray24,
-      iconArray24,
-      tempArray24,
-      humidityArray24,
+    //Array24 data
+    dateTimeArray24,
+    weatherArray24,
+    iconArray24,
+    tempArray24,
+    humidityArray24,
 
-      //Array32 data
-      dateTimeArray32,
-      weatherArray32,
-      iconArray32,
-      tempArray32,
-      humidityArray32
-    );
-  });
+    //Array32 data
+    dateTimeArray32,
+    weatherArray32,
+    iconArray32,
+    tempArray32,
+    humidityArray32
+  );
 }
 
 // function that listens for a click and triggers getting users location
@@ -125,7 +122,6 @@ locationRef.addEventListener("click", async () => {
 
 // function the converts user input into longitude and latitude
 async function nameToCoords(value) {
-  rootRef.innerHTML = `Click the search icon to check the weather`;
   try {
     const coords = await axios.get(
       `http://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=1&appid=09bd509dc3f293584e3d0a44061be1ce`
@@ -139,6 +135,10 @@ async function nameToCoords(value) {
 }
 
 // function that listens for user input
-searchRef.addEventListener("input", (e) => {
-  nameToCoords(e.target.value);
+searchRef.addEventListener("input", async (e) => {
+  rootRef.innerHTML = `Click the search icon to check the weather`;
+  // function that listens for a click to trigger uses input
+  searchButtonRef.addEventListener("click", async () => {
+    await nameToCoords(e.target.value);
+  });
 });
