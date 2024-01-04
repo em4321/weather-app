@@ -19,18 +19,17 @@ html {
 }
 
 #root {
-  min-height: 76vh;
-  font-size: 2rem;
+  min-height: 84vh;
+  font-size: 3rem;
   text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 2rem;
 }
 
 #search-bar {
   width: 400rem;
   padding: 1.5rem;
   height: 60%;
-  border-radius: 3rem;
+  background-color: #cff9ff;
 }
 #searchButton {
   width: 60%;
@@ -38,8 +37,9 @@ html {
   margin-left: 0.5rem;
   font-size: 2rem;
   height: 60%;
-  border-radius: 3rem;
   cursor: pointer;
+  color: #cff9ff;
+  background-color: #ffb690;
 }
 
 #getLocation {
@@ -47,8 +47,9 @@ html {
   margin-right: 0.5rem;
   height: 60%;
   font-size: 2.2rem;
-  border-radius: 3rem;
   cursor: pointer;
+  color: #cff9ff;
+  background-color: #ffb690;
 }
 
 .search-weather {
@@ -82,32 +83,31 @@ span {
   color: #cff9ff;
   position: absolute;
   opacity: 80%;
-  margin-left: 1.2rem;
+  margin-left: 1.5rem;
 }
 
 .sun-icon {
   font-size: 3.5rem;
   color: #ffb690;
   margin-right: 0.8rem;
-  margin-left: 3.2rem;
+  margin-left: 3.5rem;
   margin-bottom: 2rem;
 }
+
 .wf {
   display: flex;
-  margin-top: 12rem;
-  margin-bottom: 12rem;
   justify-content: center;
   justify-content: space-around;
 }
 
 .current-weather {
-  font-size: 3rem;
-  text-align: center;
-  /* height: 58rem;
-  width: 48rem;
+  font-size: 2rem;
+  text-align: left;
+  height: 54rem;
+  width: 40rem;
   margin: 1rem;
-  border: #555 solid 1px;
-  border-radius: 3rem; */
+  /* border: #555 solid 1px; */
+  border-radius: 3rem;
   /* background-image: url("./rain.jpg");
   background-attachment: inherit;
   background-repeat: no-repeat;
@@ -115,31 +115,56 @@ span {
   background-position: top; */
 }
 
+a {
+  text-decoration: none;
+}
+
+.wf-0 h4 {
+  color: #fdf4f4;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
 .wf-8,
-.wf-12,
 .wf-16,
 .wf-24,
 .wf-32 {
-  padding: 1rem;
-  height: 20rem;
-  margin: 0.3rem;
+  position: relative;
+  padding: 0.5rem;
+  height: 22rem;
+  width: 35rem;
+  margin-bottom: 0.5rem;
   font-size: 1.2rem;
   border: #555 solid 1px;
-  background-color: #fdf4f4;
-  opacity: 50%;
-  border-radius: 3rem;
+  background-color: #ffb690;
 }
 
-.wf-8:hover,
-.wf-16:hover,
-.wf-24:hover,
-.wf-32:hover {
+.wf-8:focus-within,
+.wf-16:focus-within,
+.wf-24:focus-within,
+.wf-32:focus-within {
   transform: translateY(0);
-  background-color: #fff;
-  opacity: 100%;
+  width: 100%;
   height: 30rem;
-  width: 50rem;
-  font-size: 1.5rem;
+  text-align: left;
+}
+.wf-8:focus-within h3,
+.wf-16:focus-within h3,
+.wf-24:focus-within h3,
+.wf-32:focus-within h3 {
+  text-align: center;
+}
+
+.wf-8 p,
+.wf-16 p,
+.wf-24 p,
+.wf-32 p {
+  display: none;
+}
+.wf-8:focus-within p,
+.wf-16:focus-within p,
+.wf-24:focus-within p,
+.wf-32:focus-within p {
+  display: inherit;
 }
 
 .line {
@@ -166,12 +191,16 @@ footer p {
   .wf-32 {
     font-size: 2rem;
   }
+  .wf-8:focus-within,
+  .wf-16:focus-within,
+  .wf-24:focus-within,
+  .wf-32:focus-within {
+    font-size: 1.5rem;
+  }
   input {
     display: inherit;
   }
 }
-
-.wf-icon {
-  height: 5rem;
-  width: 5rem;
+a {
+  color: #000000;
 }

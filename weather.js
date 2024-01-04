@@ -21,7 +21,6 @@ async function getWeather(latitude, longitude) {
   const printCountry = country;
   const printSunrise = new Date(sunrise * 1000);
   const printSunset = new Date(sunset * 1000);
-  const printTimezone = timezone;
 
   // Weather data [Array 0]
   const dateTime0 = data.list[0].dt_txt;
@@ -29,6 +28,7 @@ async function getWeather(latitude, longitude) {
   const weatherArray0 = data.list[0].weather[0].description;
   const iconArray0 = data.list[0].weather[0].icon;
   const tempArray0 = data.list[0].main.temp;
+  const feels_likeArray0 = data.list[0].main.feels_like;
   const humidityArray0 = data.list[0].main.humidity;
 
   // Weather data [Array 8]
@@ -37,6 +37,7 @@ async function getWeather(latitude, longitude) {
   const weatherArray8 = data.list[8].weather[0].description;
   const iconArray8 = data.list[8].weather[0].icon;
   const tempArray8 = data.list[8].main.temp;
+  const feels_likeArray8 = data.list[8].main.feels_like;
   const humidityArray8 = data.list[8].main.humidity;
 
   // Weather data [Array 16]
@@ -45,6 +46,7 @@ async function getWeather(latitude, longitude) {
   const weatherArray16 = data.list[16].weather[0].description;
   const iconArray16 = data.list[16].weather[0].icon;
   const tempArray16 = data.list[16].main.temp;
+  const feels_likeArray16 = data.list[16].main.feels_like;
   const humidityArray16 = data.list[16].main.humidity;
 
   // Weather data [Array 24]
@@ -53,6 +55,7 @@ async function getWeather(latitude, longitude) {
   const weatherArray24 = data.list[24].weather[0].description;
   const iconArray24 = data.list[24].weather[0].icon;
   const tempArray24 = data.list[24].main.temp;
+  const feels_likeArray24 = data.list[24].main.feels_like;
   const humidityArray24 = data.list[24].main.humidity;
 
   // Weather data [Array 32]
@@ -61,6 +64,7 @@ async function getWeather(latitude, longitude) {
   const weatherArray32 = data.list[32].weather[0].description;
   const iconArray32 = data.list[32].weather[0].icon;
   const tempArray32 = data.list[32].main.temp;
+  const feels_likeArray32 = data.list[32].main.feels_like;
   const humidityArray32 = data.list[32].main.humidity;
 
   rootRef.innerHTML = getHtml(
@@ -68,13 +72,13 @@ async function getWeather(latitude, longitude) {
     printLocation,
     printSunrise,
     printSunset,
-    printTimezone,
 
     //Array0 data
     dateTimeArray0,
     weatherArray0,
     iconArray0,
     tempArray0,
+    feels_likeArray0,
     humidityArray0,
 
     //Array8 data
@@ -82,6 +86,7 @@ async function getWeather(latitude, longitude) {
     weatherArray8,
     iconArray8,
     tempArray8,
+    feels_likeArray8,
     humidityArray8,
 
     //Array16 data
@@ -89,6 +94,7 @@ async function getWeather(latitude, longitude) {
     weatherArray16,
     iconArray16,
     tempArray16,
+    feels_likeArray16,
     humidityArray16,
 
     //Array24 data
@@ -96,6 +102,7 @@ async function getWeather(latitude, longitude) {
     weatherArray24,
     iconArray24,
     tempArray24,
+    feels_likeArray24,
     humidityArray24,
 
     //Array32 data
@@ -103,6 +110,7 @@ async function getWeather(latitude, longitude) {
     weatherArray32,
     iconArray32,
     tempArray32,
+    feels_likeArray32,
     humidityArray32
   );
 }
@@ -124,7 +132,7 @@ locationRef.addEventListener("click", async () => {
 async function nameToCoords(value) {
   try {
     const coords = await axios.get(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=1&appid=09bd509dc3f293584e3d0a44061be1ce`
+      `http://api.openweathermap.org/geo/1.0/direct?q=${value},,GB&limit=1&appid=09bd509dc3f293584e3d0a44061be1ce`
     );
 
     const { lat, lon } = coords.data[0];
