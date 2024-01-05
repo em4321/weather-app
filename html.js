@@ -10,13 +10,7 @@ export function getHtml(
   array0_temp,
   array0_feels_like,
   array0_humidity,
-  //Array4 data
-  array4_datetime,
-  array4_weather,
-  array4_icon,
-  array4_temp,
-  array4_feels_like,
-  array4_humidity,
+
   //Array8 data
   array8_datetime,
   array8_weather,
@@ -48,7 +42,8 @@ export function getHtml(
 ) {
   return `<div class = "current-weather">
   
-  <h2>${location}, ${country}</h2>
+  <h2>${location}, ${country} weather for the next 3 hours</h2>
+  
   <button class = "wf-now">
   
   <h3>${array0_datetime.toDateString()}</h3>
@@ -69,7 +64,9 @@ export function getHtml(
         
     
         <div class = "wf">
-
+<h4>Scroll accross for this weeks weather forecast</h4>
+<ul class = "slider">
+<li>
         <button class = "wf-8">
         <h3>${array8_datetime.toDateString()}</h3>
         <p><strong>${array8_datetime.toLocaleTimeString()}</strong></p>
@@ -79,8 +76,10 @@ export function getHtml(
         <p>Feels like ${array8_feels_like}°</p>
         <p>Humidity ${array8_humidity}%</p>
         </button>
-        
+        </li>
        
+        
+       <li>
             <button class = "wf-16">
             <h3>${array16_datetime.toDateString()}</h3>
             <p><strong>${array16_datetime.toLocaleTimeString()}</strong></p>
@@ -90,7 +89,9 @@ export function getHtml(
             <p>Feels like ${array16_feels_like}°</p>
             <p>Humidity ${array16_humidity}%</p>
             </button>
-           
+           </li>
+
+        <li>
             <button class = "wf-24">
             <h3>${array24_datetime.toDateString()}</h3>
             <p><strong>${array24_datetime.toLocaleTimeString()}</strong></p>
@@ -100,7 +101,9 @@ export function getHtml(
             <p>Feels like ${array24_feels_like}°</p>
             <p>Humidity ${array24_humidity}%</p>
             </button>
-          
+          </li>
+
+        <li>
             <button class = "wf-32">
             <h3>${array32_datetime.toDateString()}</h3>
             <p><strong>${array32_datetime.toLocaleTimeString()}</strong></p>
@@ -110,5 +113,7 @@ export function getHtml(
              <p>Feels like ${array32_feels_like}°</p>
              <p>Humidity ${array32_humidity}%</p>
             </button>
+            </li>
+            </ul>
             </div>`;
 }

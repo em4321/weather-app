@@ -31,15 +31,6 @@ async function getWeather(latitude, longitude) {
   const feels_likeArray0 = data.list[0].main.feels_like;
   const humidityArray0 = data.list[0].main.humidity;
 
-  // Weather data [Array 4]
-  const dateTime4 = data.list[4].dt_txt;
-  const dateTimeArray4 = new Date(dateTime0);
-  const weatherArray4 = data.list[4].weather[0].description;
-  const iconArray4 = data.list[4].weather[0].icon;
-  const tempArray4 = data.list[4].main.temp;
-  const feels_likeArray4 = data.list[4].main.feels_like;
-  const humidityArray4 = data.list[4].main.humidity;
-
   // Weather data [Array 8]
   const dateTime8 = data.list[8].dt_txt;
   const dateTimeArray8 = new Date(dateTime8);
@@ -89,14 +80,6 @@ async function getWeather(latitude, longitude) {
     tempArray0,
     feels_likeArray0,
     humidityArray0,
-
-    //Array4 data
-    dateTimeArray4,
-    weatherArray4,
-    iconArray4,
-    tempArray4,
-    feels_likeArray4,
-    humidityArray4,
 
     //Array8 data
     dateTimeArray8,
