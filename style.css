@@ -240,8 +240,24 @@ footer p {
     height: 100vh;
   }
 }
-
-@media screen and (min-width: 580px) {
+@media screen and (min-width: 507px) {
+  .wf-now {
+    width: 37rem;
+  }
+  .wf-8,
+  .wf-16,
+  .wf-24,
+  .wf-32 {
+    width: 18rem;
+  }
+  .wf-8:focus-within,
+  .wf-16:focus-within,
+  .wf-24:focus-within,
+  .wf-32:focus-within {
+    width: 25rem;
+  }
+}
+@media screen and (min-width: 597px) {
   .wf-8,
   .wf-16,
   .wf-24,
@@ -265,29 +281,7 @@ footer p {
   }
 }
 
-@media screen and (min-width: 757px) {
-  .wf-now {
-    width: 35rem;
-    height: 35rem;
-    margin: 2rem;
-  }
-  .wf-8,
-  .wf-16,
-  .wf-24,
-  .wf-32 {
-    height: 20rem;
-    width: 25rem;
-    margin: 1rem;
-  }
-  .wf-8:focus-within,
-  .wf-16:focus-within,
-  .wf-24:focus-within,
-  .wf-32:focus-within {
-    width: 38rem;
-  }
-}
-
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 698px) {
   #root {
     height: 100vh;
   }
