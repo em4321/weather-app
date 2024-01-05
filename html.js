@@ -10,6 +10,13 @@ export function getHtml(
   array0_temp,
   array0_feels_like,
   array0_humidity,
+  //Array4 data
+  array4_datetime,
+  array4_weather,
+  array4_icon,
+  array4_temp,
+  array4_feels_like,
+  array4_humidity,
   //Array8 data
   array8_datetime,
   array8_weather,
@@ -40,23 +47,29 @@ export function getHtml(
   array32_humidity
 ) {
   return `<div class = "current-weather">
-  <div class = "wf-location">
+  
+  <h2>${location}, ${country}</h2>
+  <button class = "wf-now">
+  
   <h3>${array0_datetime.toDateString()}</h3>
-  <h1>${location}, ${country}</h1>
-  <h1>${array0_temp}°</h1>
-    
-        <div class = "wf-0">
-        <img src = "https://openweathermap.org/img/wn/${array0_icon}@4x.png">
-        <h3>Weather: ${array0_weather}</h3>
-        <p><strong>Feels like ${array0_feels_like}°</strong></p>
-        <p><strong>Humidity ${array0_humidity}%</strong></p>
+       <p><strong>${array0_datetime.toLocaleTimeString()}</strong></p>
+  <h4>${array0_temp}°</h4>
+  <div class = "wf-0">
+
+   <img class= "icon-large" src = "https://openweathermap.org/img/wn/${array0_icon}@4x.png">
+        <h4>${array0_weather}</h4>
+        <p>Feels like ${array0_feels_like}°</p>
+        <p>Humidity ${array0_humidity}%</p>
         <!-- <small><a href="https://www.google.com/maps/place/${location},${country}">(View on Google Maps)</a></small> -->
-        <h4>Sunrise ${sunrise.toLocaleTimeString()}am Sunset ${sunset.toLocaleTimeString()}pm</h4>
+        <h5>Sunrise ${sunrise.toLocaleTimeString()}am</h5>
+        <h5>Sunset ${sunset.toLocaleTimeString()}pm</h5>
         </div>
+        </button>
         </div>
-        </div>
+        
     
         <div class = "wf">
+
         <button class = "wf-8">
         <h3>${array8_datetime.toDateString()}</h3>
         <p><strong>${array8_datetime.toLocaleTimeString()}</strong></p>

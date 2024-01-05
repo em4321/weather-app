@@ -11,6 +11,7 @@ html {
 }
 
 .background {
+  min-height: 100vh;
   background-image: url("./sky.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -19,40 +20,62 @@ html {
 }
 
 #root {
-  min-height: 84vh;
   font-size: 3rem;
   text-align: center;
-  margin-top: 2rem;
+  height: 130vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* background-color: #ffb690;
+  opacity: 70%;
+  margin: 10%;
+  /* border: #555 solid 1px;
+  border-radius: 3rem; */
 }
 
 #search-bar {
-  width: 400rem;
-  padding: 1.5rem;
-  height: 60%;
+  position: relative;
+  width: 60vw;
+  opacity: 80%;
+  margin-left: 2.5rem;
+  padding: 1rem;
+  height: 55%;
   background-color: #cff9ff;
+  color: #ffb690;
+  border-radius: 0.5rem;
 }
 #searchButton {
-  width: 60%;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
+  position: relative;
+  width: 4rem;
+  border: none;
+  margin-left: 1rem;
   font-size: 2rem;
-  height: 60%;
+  height: 55%;
   cursor: pointer;
-  color: #cff9ff;
-  background-color: #ffb690;
+  color: #ffb690;
+  background: transparent;
+  border-radius: 0.5rem;
 }
 
 #getLocation {
-  width: 60%;
-  margin-right: 0.5rem;
-  height: 60%;
+  position: relative;
+  margin-right: 15.5rem;
+  margin-left: 1rem;
+  width: 4rem;
+  border: none;
   font-size: 2.2rem;
   cursor: pointer;
-  color: #cff9ff;
-  background-color: #ffb690;
+  color: #ffb690;
+  background: transparent;
+  border-radius: 0.5rem;
 }
 
 .search-weather {
+  position: relative;
+  width: 100%;
   height: 7rem;
   padding-top: 1rem;
   display: flex;
@@ -69,84 +92,111 @@ body {
 header {
   background-color: #555;
   height: 9rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 span {
   font-size: 1.8rem;
   color: #fdf4f4;
-  margin-left: 0.5rem;
+  margin-left: 2rem;
   position: absolute;
-  margin-top: 6rem;
+  margin-top: 7rem;
 }
 .cloud-icon {
   font-size: 3.5rem;
   color: #cff9ff;
   position: absolute;
   opacity: 80%;
-  margin-left: 1.5rem;
+  margin-left: 3rem;
 }
 
 .sun-icon {
   font-size: 3.5rem;
   color: #ffb690;
-  margin-right: 0.8rem;
-  margin-left: 3.5rem;
+  margin-left: 5rem;
   margin-bottom: 2rem;
 }
 
-.wf {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-}
-
 .current-weather {
-  font-size: 2rem;
-  text-align: left;
-  height: 54rem;
-  width: 40rem;
-  margin: 1rem;
-  /* border: #555 solid 1px; */
-  border-radius: 3rem;
-  /* background-image: url("./rain.jpg");
-  background-attachment: inherit;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
+.wf-now {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 32rem;
+  background-color: #ffb690;
+  opacity: 70%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: #555 solid 1px;
+  border-radius: 3rem;
+}
+
+.wf-now:focus-within .wf-icon {
+  display: inherit;
+  align-items: center;
+}
+.wf-now:focus-within .icon-large {
+  width: 6rem;
+}
+.wf-now:focus-within {
+  height: 20rem;
+  font-size: 1.2rem;
+}
+.wf-now p {
+  display: none;
+}
+
+.wf-now:focus-within p {
+  display: inherit;
+}
+
+.wf-now:focus-within h5 {
+  display: none;
+}
+
+.wf-now:focus-within h3 {
+  text-align: center;
+}
 a {
   text-decoration: none;
 }
 
 .wf-0 h4 {
-  color: #fdf4f4;
   margin-top: 2rem;
   font-size: 1.7rem;
 }
+
 .wf-8,
 .wf-16,
 .wf-24,
 .wf-32 {
-  position: relative;
+  text-transform: uppercase;
   padding: 0.5rem;
-  height: 22rem;
-  width: 35rem;
+  height: 15rem;
+  width: 15rem;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   border: #555 solid 1px;
   background-color: #ffb690;
+  opacity: 70%;
+  border-radius: 3rem;
 }
 
 .wf-8:focus-within,
 .wf-16:focus-within,
 .wf-24:focus-within,
 .wf-32:focus-within {
-  transform: translateY(0);
-  width: 100%;
-  height: 30rem;
-  text-align: left;
+  width: 30rem;
+  height: 15rem;
 }
+
 .wf-8:focus-within h3,
 .wf-16:focus-within h3,
 .wf-24:focus-within h3,
@@ -160,6 +210,7 @@ a {
 .wf-32 p {
   display: none;
 }
+
 .wf-8:focus-within p,
 .wf-16:focus-within p,
 .wf-24:focus-within p,
@@ -184,21 +235,120 @@ footer p {
   text-align: center;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 349px) {
+  #root {
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 580px) {
   .wf-8,
   .wf-16,
   .wf-24,
   .wf-32 {
-    font-size: 2rem;
+    width: 35%;
   }
   .wf-8:focus-within,
   .wf-16:focus-within,
   .wf-24:focus-within,
   .wf-32:focus-within {
-    font-size: 1.5rem;
+    width: 34rem;
+    height: 18rem;
   }
-  input {
-    display: inherit;
+  .wf-now {
+    width: 40rem;
+  }
+  .wf-now:focus-within {
+    width: 54rem;
+    height: 20rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 757px) {
+  .wf-now {
+    width: 35rem;
+    height: 35rem;
+    margin: 2rem;
+  }
+  .wf-8,
+  .wf-16,
+  .wf-24,
+  .wf-32 {
+    height: 20rem;
+    width: 25rem;
+    margin: 1rem;
+  }
+  .wf-8:focus-within,
+  .wf-16:focus-within,
+  .wf-24:focus-within,
+  .wf-32:focus-within {
+    width: 38rem;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  #root {
+    height: 100vh;
+  }
+
+  .wf {
+    flex-direction: row;
+  }
+
+  .wf-8,
+  .wf-16,
+  .wf-24,
+  .wf-32 {
+    height: 18rem;
+    width: 15rem;
+    margin: 0rem;
+  }
+  .wf-8:focus-within,
+  .wf-16:focus-within,
+  .wf-24:focus-within,
+  .wf-32:focus-within {
+    width: 35rem;
+  }
+}
+@media screen and (min-width: 1060px) {
+  #root {
+    height: 100vh;
+  }
+  .wf-now {
+    width: 55rem;
+  }
+  .wf-8,
+  .wf-16,
+  .wf-24,
+  .wf-32 {
+    height: 20rem;
+    width: 20rem;
+  }
+  .wf-8:focus-within,
+  .wf-16:focus-within,
+  .wf-24:focus-within,
+  .wf-32:focus-within {
+    width: 42rem;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .wf-now {
+    width: 65rem;
+  }
+  .wf-8,
+  .wf-16,
+  .wf-24,
+  .wf-32 {
+    height: 20rem;
+    width: 22rem;
+  }
+  .wf-8:focus-within,
+  .wf-16:focus-within,
+  .wf-24:focus-within,
+  .wf-32:focus-within {
+    width: 45rem;
   }
 }
 a {
