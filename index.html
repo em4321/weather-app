@@ -18,10 +18,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <title>WeatherForecast</title>
   </head>
   <body>
     <header>
-      <div class="search-weather">
+      <div class="header">
         <div class="cloud-icon">
           <i class="fa fa-cloud"></i>
         </div>
@@ -29,15 +30,13 @@
           <i class="fa fa-sun-o"></i>
         </div>
         <span>WeatherForecast</span>
-        <input
-          type="text"
-          id="search-bar"
-          placeholder="e.g. London, Cardiff, Glasgow..."
-        />
-        <button id="searchButton"><i class="fa fa-search"></i></button>
-        <button id="getLocation"><i class="fa fa-location-arrow"></i></button>
       </div>
     </header>
+    <div class="search-weather">
+      <input type="text" id="search-bar" placeholder="Search City" />
+      <button id="searchButton"><i class="fa fa-search"></i></button>
+      <button id="getLocation"><i class="fa fa-location-arrow"></i></button>
+    </div>
     <div class="background">
       <div id="root">
         <p>Enter a UK town or city in the search bar</p>

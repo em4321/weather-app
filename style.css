@@ -37,51 +37,57 @@ a {
 
 #search-bar {
   position: relative;
-  width: 60vw;
+  width: 50vw;
   opacity: 80%;
-  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   padding: 1rem;
-  height: 55%;
   color: #000000;
   border-radius: 0.5rem;
-  text-transform: uppercase;
 }
+
 #searchButton {
-  position: relative;
+  position: absolute;
   width: 4rem;
   border: none;
-  margin-left: 1rem;
+  margin-right: 1rem;
+  right: 30%;
   font-size: 2rem;
   height: 55%;
   cursor: pointer;
-  color: #fdf4f4;
+  color: #40575cfe;
   background: transparent;
   border-radius: 0.5rem;
 }
 
 #getLocation {
-  position: relative;
-  margin-right: 15.5rem;
-  margin-left: 1rem;
+  position: absolute;
+  right: 25%;
   width: 4rem;
   border: none;
   font-size: 2.2rem;
   cursor: pointer;
-  color: #fdf4f4;
+  color: #40575cfe;
   background: transparent;
   border-radius: 0.5rem;
 }
 
-.search-weather {
+.header {
   position: relative;
-  width: 60%;
   height: 7rem;
   padding-top: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
+.search-weather {
+  background-color: #40575cfe;
+  opacity: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body {
   min-height: 100vh;
   display: flex;
