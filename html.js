@@ -151,9 +151,10 @@ export function getHtml(
    
   <h3>${array0_datetime.toDateString()}</h3>
   <h1>${array0_temp}°</h1>
+  <h1>${array0_weather}<h1>
   <img class= "icon-large" src = "https://openweathermap.org/img/wn/${array0_icon}@4x.png">
 
-  <h4>The weather is currently ${array0_temp}° with ${array0_weather} up until ${array0_datetime.toLocaleTimeString()}</h4>
+  <h4>Currently ${array0_temp}° with ${array0_weather} until ${array0_datetime.toLocaleTimeString()}</h4>
     
         <p>Feels like ${array0_feels_like}°</p>
         <p>Humidity ${array0_humidity}%</p>
@@ -170,7 +171,7 @@ export function getHtml(
 
 <li>
 <button class = "wf-2">
-        <h4>${array2_datetime.toDateString()} up until ${array2_datetime.toLocaleTimeString()}</h4>
+        <h4>${array2_datetime.toDateString()} until ${array2_datetime.toLocaleTimeString()}</h4>
         <h3>${array2_temp}°</h3>
         <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array2_icon}.png">
         <h4>${array2_weather}</h4>
@@ -181,7 +182,7 @@ export function getHtml(
         </button></li>
         
 <li><button class = "wf-4">
-        <h4>${array4_datetime.toDateString()} up until ${array4_datetime.toLocaleTimeString()}</h4>
+        <h4>${array4_datetime.toDateString()} until ${array4_datetime.toLocaleTimeString()}</h4>
         <h3>${array4_temp}°</h3>
         <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array4_icon}.png">
         <h4>${array4_weather}</h4>
@@ -192,7 +193,7 @@ export function getHtml(
         </button></li>
 
 <li><button class = "wf-6">
-        <h4>${array6_datetime.toDateString()} up until ${array6_datetime.toLocaleTimeString()}</h4>
+        <h4>${array6_datetime.toDateString()} until ${array6_datetime.toLocaleTimeString()}</h4>
         <h3>${array6_temp}°</h3>
         <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array6_icon}.png">
         <h4>${array6_weather}</h4>
@@ -203,7 +204,7 @@ export function getHtml(
         </button></li>
 
 <li><button class = "wf-8">
-        <h4>${array8_datetime.toDateString()} up until ${array8_datetime.toLocaleTimeString()}</h4>
+        <h4>${array8_datetime.toDateString()} until ${array8_datetime.toLocaleTimeString()}</h4>
         <h3>${array8_temp}°</h3>
         <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array8_icon}.png">
         <h4>${array8_weather}</h4>
@@ -215,7 +216,7 @@ export function getHtml(
         </li>
         <li>
         <button class = "wf-10">
-        <h4>${array10_datetime.toDateString()} up until ${array10_datetime.toLocaleTimeString()}</h4>
+        <h4>${array10_datetime.toDateString()} until ${array10_datetime.toLocaleTimeString()}</h4>
         <h3>${array10_temp}°</h3> 
         <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array10_icon}.png">
         <h4>${array10_weather}</h4> 
@@ -227,7 +228,7 @@ export function getHtml(
        </li>
        <li>
        <button class = "wf-12">
-       <h4>${array12_datetime.toDateString()} up until ${array12_datetime.toLocaleTimeString()}</h4>
+       <h4>${array12_datetime.toDateString()} until ${array12_datetime.toLocaleTimeString()}</h4>
        <h3>${array12_temp}°</h3> 
        <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array12_icon}.png">
        <h4>${array12_weather}</h4> 
@@ -239,7 +240,7 @@ export function getHtml(
       </li>
       <li>
       <button class = "wf-14">
-      <h4>${array14_datetime.toDateString()} up until ${array14_datetime.toLocaleTimeString()}</h4>
+      <h4>${array14_datetime.toDateString()} until ${array14_datetime.toLocaleTimeString()}</h4>
       <h3>${array14_temp}°</h3> 
       <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array14_icon}.png">
       <h4>${array14_weather}</h4> 
@@ -252,7 +253,7 @@ export function getHtml(
 
        <li>
             <button class = "wf-16">
-            <h4>${array16_datetime.toDateString()} up until ${array16_datetime.toLocaleTimeString()}</h4></h3>
+            <h4>${array16_datetime.toDateString()} until ${array16_datetime.toLocaleTimeString()}</h4></h3>
             <h3>${array16_temp}°</h3> 
             <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array16_icon}.png">
             <h4>${array16_weather}</h4> 
@@ -264,7 +265,7 @@ export function getHtml(
            </li>
            <li>
            <button class = "wf-18">
-           <h4>${array18_datetime.toDateString()} up until ${array18_datetime.toLocaleTimeString()}</h4>
+           <h4>${array18_datetime.toDateString()} until ${array18_datetime.toLocaleTimeString()}</h4>
            <h3>${array18_temp}°</h3> 
            <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array18_icon}.png">
            <h4>${array18_weather}</h4> 
@@ -277,7 +278,7 @@ export function getHtml(
 
           <li>
           <button class = "wf-20">
-          <h4>${array20_datetime.toDateString()} up until ${array20_datetime.toLocaleTimeString()}</h4>
+          <h4>${array20_datetime.toDateString()} until ${array20_datetime.toLocaleTimeString()}</h4>
           <h3>${array20_temp}°</h3>
           <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array20_icon}.png">
           <h4>${array20_weather}</h4> 
@@ -290,7 +291,7 @@ export function getHtml(
 
         <li>
           <button class = "wf-22">
-          <h4>${array22_datetime.toDateString()} up until ${array22_datetime.toLocaleTimeString()}</h4>
+          <h4>${array22_datetime.toDateString()} until ${array22_datetime.toLocaleTimeString()}</h4>
           <h3>${array22_temp}°</h3>
           <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array22_icon}.png">
           <h4>${array22_weather}</h4> 
@@ -302,7 +303,7 @@ export function getHtml(
         </li>
         <li>
             <button class = "wf-24">
-            <h4>${array24_datetime.toDateString()} up until ${array24_datetime.toLocaleTimeString()}</h4>
+            <h4>${array24_datetime.toDateString()} until ${array24_datetime.toLocaleTimeString()}</h4>
             <h3>${array24_temp}°</h3>
             <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array24_icon}.png">
             <h4>${array24_weather}</h4> 
@@ -315,7 +316,7 @@ export function getHtml(
 
           <li>
           <button class = "wf-26">
-          <h4>${array26_datetime.toDateString()} up until ${array26_datetime.toLocaleTimeString()}</h4>
+          <h4>${array26_datetime.toDateString()} until ${array26_datetime.toLocaleTimeString()}</h4>
           <h3>${array26_temp}°</h3>
           <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array26_icon}.png">
           <h4>${array26_weather}</h4> 
@@ -328,7 +329,7 @@ export function getHtml(
 
         <li>
         <button class = "wf-28">
-        <h4>${array28_datetime.toDateString()} up until ${array28_datetime.toLocaleTimeString()}</h4>
+        <h4>${array28_datetime.toDateString()} until ${array28_datetime.toLocaleTimeString()}</h4>
         <h3>${array28_temp}°</h3>
         <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array28_icon}.png">
         <h4>${array28_weather}</h4> 
@@ -342,7 +343,7 @@ export function getHtml(
 
       <li>
       <button class = "wf-30">
-      <h4>${array30_datetime.toDateString()} up until ${array30_datetime.toLocaleTimeString()}</h4>
+      <h4>${array30_datetime.toDateString()} until ${array30_datetime.toLocaleTimeString()}</h4>
       <h3>${array30_temp}°</h3>
        <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array30_icon}.png">
        <h4>${array30_weather}</h4>
@@ -354,7 +355,7 @@ export function getHtml(
       </li>
         <li>
             <button class = "wf-32">
-            <h4>${array32_datetime.toDateString()} up until ${array32_datetime.toLocaleTimeString()}</h4>
+            <h4>${array32_datetime.toDateString()} until ${array32_datetime.toLocaleTimeString()}</h4>
             <h3>${array32_temp}°</h3>
              <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array32_icon}.png">
              <h4>${array32_weather}</h4>
@@ -366,7 +367,7 @@ export function getHtml(
             </li>
             <li>
             <button class = "wf-34">
-            <h4>${array34_datetime.toDateString()} up until ${array34_datetime.toLocaleTimeString()}</h4>
+            <h4>${array34_datetime.toDateString()} until ${array34_datetime.toLocaleTimeString()}</h4>
             <h3>${array34_temp}°</h3>
              <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array34_icon}.png">
              <h4>${array34_weather}</h4>
@@ -378,7 +379,7 @@ export function getHtml(
             </li>
             <li>
             <button class = "wf-36">
-            <h4>${array36_datetime.toDateString()} up until ${array36_datetime.toLocaleTimeString()}</h4>
+            <h4>${array36_datetime.toDateString()} until ${array36_datetime.toLocaleTimeString()}</h4>
             <h3>${array36_temp}°</h3>
              <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array36_icon}.png">
              <h4>${array36_weather}</h4>
@@ -390,7 +391,7 @@ export function getHtml(
             </li>
             <li>
             <button class = "wf-38">
-            <h4>${array38_datetime.toDateString()} up until ${array38_datetime.toLocaleTimeString()}</h4>
+            <h4>${array38_datetime.toDateString()} until ${array38_datetime.toLocaleTimeString()}</h4>
             <h3>${array38_temp}°</h3>
              <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array38_icon}.png">
              <h4>${array38_weather}</h4>
