@@ -16,7 +16,7 @@ async function getWeather(latitude, longitude) {
   );
 
   console.log(data);
-  const { name, country, sunrise, sunset, timezone } = data.city;
+  const { name, country, sunrise, sunset } = data.city;
   const printLocation = name;
   const printCountry = country;
   const printSunrise = new Date(sunrise * 1000);

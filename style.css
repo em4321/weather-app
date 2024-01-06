@@ -25,13 +25,14 @@ a {
 #root {
   font-size: 3rem;
   text-align: center;
-  height: 110vh;
-  padding: 2rem;
+  height: 115vh;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  text-transform: uppercase;
 }
 
 #search-bar {
@@ -43,6 +44,7 @@ a {
   height: 55%;
   color: #000000;
   border-radius: 0.5rem;
+  text-transform: uppercase;
 }
 #searchButton {
   position: relative;
@@ -116,65 +118,33 @@ span {
 
 .current-weather {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
-.wf-now {
+.wf-0 {
   font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
   width: 30rem;
   background-color: #f0a350;
+  color: #000000;
   opacity: 70%;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   border: #40575cfe solid 1px;
   border-radius: 3rem;
-  cursor: pointer;
 }
 
-.wf-now:focus-within .wf-icon {
-  display: inherit;
-  align-items: center;
-}
-.wf-now:focus-within .icon-large {
-  width: 6rem;
-}
-.wf-now:focus-within {
-  height: 20rem;
-  font-size: 1.2rem;
-}
-.wf-now p {
-  display: none;
-}
-
-.wf-now:focus-within p {
-  display: inherit;
-}
-
-.wf-now:focus-within h5 {
-  display: none;
-}
-
-.wf-now:focus-within h3 {
-  text-align: center;
-}
 a {
   text-decoration: none;
 }
 
-.wf-0 h4 {
-  margin-top: 2rem;
-  font-size: 1.7rem;
-}
-
 .wf {
   padding: 0.5rem;
-  overflow-y: scroll;
 }
 ul {
   list-style: none;
@@ -209,13 +179,7 @@ ul {
   scroll-snap-align: center;
   flex-direction: column;
   justify-content: center;
-  /* padding: calc(var(--gutter) / 2 * 1.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  border-radius: 8px; */
+  padding: 0.5rem;
 }
 
 .wf-2,
@@ -238,11 +202,11 @@ ul {
 .wf-36,
 .wf-38 {
   text-transform: uppercase;
-  padding: 0.5rem;
-  height: 15rem;
-  width: 12rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  padding: 1rem;
+  height: 18rem;
+  width: 15rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
   border: #40575cfe solid 1px;
   background-color: #f0a350;
   opacity: 70%;
@@ -268,7 +232,7 @@ ul {
 .wf-34:focus-within,
 .wf-36:focus-within,
 .wf-38:focus-within {
-  height: 18rem;
+  height: 20rem;
   width: 18rem;
 }
 
@@ -336,6 +300,48 @@ ul {
 .wf-38:focus-within p {
   display: inherit;
 }
+.wf-2 h5,
+.wf-4 h5,
+.wf-6 h5,
+.wf-8 h5,
+.wf-10 h5,
+.wf-12 h5,
+.wf-14 h5,
+.wf-16 h5,
+.wf-18 h5,
+.wf-20 h5,
+.wf-22 h5,
+.wf-24 h5,
+.wf-26 h5,
+.wf-28 h5,
+.wf-30 h5,
+.wf-32 h5,
+.wf-34 h5,
+.wf-36 h5,
+.wf-38 h5 {
+  display: none;
+}
+.wf-2:focus-within h5,
+.wf-4:focus-within h5,
+.wf-6:focus-within h5,
+.wf-8:focus-within h5,
+.wf-10:focus-within h5,
+.wf-12:focus-within h5,
+.wf-14:focus-within h5,
+.wf-16:focus-within h5,
+.wf-18:focus-within h5,
+.wf-20:focus-within h5,
+.wf-22:focus-within h5,
+.wf-24:focus-within h5,
+.wf-26:focus-within h5,
+.wf-28:focus-within h5,
+.wf-30:focus-within h5,
+.wf-32:focus-within h5,
+.wf-34:focus-within h5,
+.wf-36:focus-within h5,
+.wf-38:focus-within h5 {
+  display: inherit;
+}
 
 .footer {
   background-color: #40575cfe;
@@ -353,108 +359,3 @@ footer p {
     height: 100vh;
   }
 }
-/* @media screen and (min-width: 507px) {
-  .wf-now {
-    width: 37rem;
-  }
-  .wf-8,
-  .wf-16,
-  .wf-24,
-  .wf-32 {
-    width: 18rem;
-  }
-  .wf-8:focus-within,
-  .wf-16:focus-within,
-  .wf-24:focus-within,
-  .wf-32:focus-within {
-    width: 25rem;
-  }
-}
-@media screen and (min-width: 597px) {
-  .wf-8,
-  .wf-16,
-  .wf-24,
-  .wf-32 {
-    width: 35%;
-  }
-  .wf-8:focus-within,
-  .wf-16:focus-within,
-  .wf-24:focus-within,
-  .wf-32:focus-within {
-    width: 34rem;
-    height: 18rem;
-  }
-  .wf-now {
-    width: 40rem;
-  }
-  .wf-now:focus-within {
-    width: 54rem;
-    height: 20rem;
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (min-width: 698px) {
-  #root {
-    height: 100vh;
-  }
-
-  .wf {
-    flex-direction: row;
-  }
-
-  .wf-8,
-  .wf-16,
-  .wf-24,
-  .wf-32 {
-    height: 18rem;
-    width: 15rem;
-    margin: 0rem;
-  }
-  .wf-8:focus-within,
-  .wf-16:focus-within,
-  .wf-24:focus-within,
-  .wf-32:focus-within {
-    width: 35rem;
-  }
-}
-@media screen and (min-width: 1060px) {
-  #root {
-    height: 100vh;
-  }
-  .wf-now {
-    width: 55rem;
-  }
-  .wf-8,
-  .wf-16,
-  .wf-24,
-  .wf-32 {
-    height: 20rem;
-    width: 20rem;
-  }
-  .wf-8:focus-within,
-  .wf-16:focus-within,
-  .wf-24:focus-within,
-  .wf-32:focus-within {
-    width: 42rem;
-  }
-}
-
-@media screen and (min-width: 1260px) {
-  .wf-now {
-    width: 65rem;
-  }
-  .wf-8,
-  .wf-16,
-  .wf-24,
-  .wf-32 {
-    height: 20rem;
-    width: 22rem;
-  }
-  .wf-8:focus-within,
-  .wf-16:focus-within,
-  .wf-24:focus-within,
-  .wf-32:focus-within {
-    width: 45rem;
-  }
-} */
