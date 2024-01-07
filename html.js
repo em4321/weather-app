@@ -257,8 +257,7 @@ export function getHtml(
         <h4>${array2_day} - approx. ${array2_datetime.toLocaleTimeString()}</h4>
         <h3>${array2_temp_max}° / ${array2_temp_min}°</h3>
         <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array2_icon}.png">
-        <h4>${array2_weather}</h4>
-        <h5>Approx. ${array2_temp}°</h5>
+        <h4>Approx. ${array2_temp}° with ${array2_weather}</h4>
         <h5>Feels like ${array2_feels_like}°</h5>
         <h5>Humidity ${array2_humidity}%</h5>
         <h5>Wind Speed ${array2_wind_speed}m/s</h5>
@@ -269,8 +268,7 @@ export function getHtml(
         <h4>${array4_day} - approx. ${array4_datetime.toLocaleTimeString()}</h4>
         <h3>${array4_temp_max}° / ${array4_temp_min}°</h3>
         <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array4_icon}.png">
-        <h4>${array4_weather}</h4>
-        <h5>Approx. ${array4_temp}°</h5>
+        <h4>Approx. ${array4_temp}° with ${array4_weather}</h4>
         <h5>Feels like ${array4_feels_like}°</h5>
         <h5>Humidity ${array4_humidity}%</h5>
         <h5>Wind Speed ${array4_wind_speed}m/s</h5>
@@ -281,8 +279,7 @@ export function getHtml(
         <h4>${array6_day} - approx. ${array6_datetime.toLocaleTimeString()}</h4>
         <h3>${array6_temp_max}° / ${array6_temp_min}°</h3>
         <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array6_icon}.png">
-        <h4>${array6_weather}</h4>
-        <h5>Approx. ${array6_temp}°</h5>
+        <h4>Approx. ${array6_temp}° with ${array6_weather}</h4>
         <h5>Feels like ${array6_feels_like}°</h5>
         <h5>Humidity ${array6_humidity}%</h5>
         <h5>Wind Speed ${array6_wind_speed}m/s</h5>
@@ -293,8 +290,7 @@ export function getHtml(
         <h4>${array8_day} - approx. ${array8_datetime.toLocaleTimeString()}</h4>
         <h3>${array8_temp_max}° / ${array8_temp_min}°</h3>
         <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array8_icon}.png">
-        <h4>${array8_weather}</h4>
-        <h5>Approx. ${array8_temp}°</h5>
+        <h4>Approx. ${array8_temp}° with ${array8_weather}</h4>
         <h5>Feels like ${array8_feels_like}°</h5>
         <h5>Humidity ${array8_humidity}%</h5>
         <h5>Wind Speed ${array8_wind_speed}m/s</h5>
@@ -305,8 +301,7 @@ export function getHtml(
         <h4>${array10_day} - approx. ${array10_datetime.toLocaleTimeString()}</h4>
         <h3>${array10_temp_max}° / ${array10_temp_min}°</h3>
         <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array10_icon}.png">
-        <h4>${array10_weather}</h4> 
-        <h5>Approx. ${array10_temp}°</h5>
+        <h4>Approx. ${array10_temp}° with ${array10_weather}</h4>
         <h5>Feels like ${array10_feels_like}°</h5>
         <h5>Humidity ${array10_humidity}%</h5>
         <h5>Wind Speed ${array10_wind_speed}m/s</h5>
@@ -317,8 +312,7 @@ export function getHtml(
        <h4>${array12_day} - approx. ${array12_datetime.toLocaleTimeString()}</h4>
        <h3>${array12_temp_max}° / ${array12_temp_min}°</h3>
        <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array12_icon}.png">
-       <h4>${array12_weather}</h4> 
-       <h5>Approx. ${array12_temp}°</h5>
+       <h4>Approx. ${array12_temp}° with ${array12_weather}</h4>
        <h5>Feels like ${array12_feels_like}°</h5>
        <h5>Humidity ${array12_humidity}%</h5>
        <h5>Wind Speed ${array12_wind_speed}m/s</h5>
@@ -329,8 +323,7 @@ export function getHtml(
       <h4>${array14_day} - approx. ${array14_datetime.toLocaleTimeString()}</h4>
       <h3>${array14_temp_max}° / ${array14_temp_min}°</h3>
       <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array14_icon}.png">
-      <h4>${array14_weather}</h4> 
-      <h5>Approx. ${array14_temp}°</h5>
+      <h4>Approx. ${array14_temp}° with ${array14_weather}</h4>
        <h5>Feels like ${array14_feels_like}°</h5>
        <h5>Humidity ${array14_humidity}%</h5>
        <h5>Wind Speed ${array14_wind_speed}m/s</h5>
@@ -341,8 +334,7 @@ export function getHtml(
             <h4>${array16_day} - approx. ${array16_datetime.toLocaleTimeString()}</h4></h3>
             <h3>${array16_temp_max}° / ${array16_temp_min}°</h3>
             <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array16_icon}.png">
-            <h4>${array16_weather}</h4> 
-            <h5>Approx. ${array16_temp}°</h5>
+            <h4>Approx. ${array16_temp}° with ${array16_weather}</h4>
        <h5>Feels like ${array16_feels_like}°</h5>
        <h5>Humidity ${array16_humidity}%</h5>
        <h5>Wind Speed ${array16_wind_speed}m/s</h5>
@@ -353,8 +345,7 @@ export function getHtml(
            <h4>${array18_day} - approx. ${array18_datetime.toLocaleTimeString()}</h4>
            <h3>${array18_temp_max}° / ${array18_temp_min}°</h3>
            <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array18_icon}.png">
-           <h4>${array18_weather}</h4> 
-           <h5>Approx. ${array18_temp}°</h5>
+           <h4>Approx. ${array18_temp}° with ${array18_weather}</h4>
        <h5>Feels like ${array18_feels_like}°</h5>
        <h5>Humidity ${array18_humidity}%</h5>
        <h5>Wind Speed ${array18_wind_speed}m/s</h5>
@@ -365,8 +356,7 @@ export function getHtml(
           <h4>${array20_day} - approx. ${array20_datetime.toLocaleTimeString()}</h4>
           <h3>${array20_temp_max}° / ${array20_temp_min}°</h3>
           <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array20_icon}.png">
-          <h4>${array20_weather}</h4> 
-          <h5>Approx. ${array20_temp}°</h5>
+          <h4>Approx. ${array20_temp}° with ${array20_weather}</h4>
        <h5>Feels like ${array20_feels_like}°</h5>
        <h5>Humidity ${array20_humidity}%</h5>
        <h5>Wind Speed ${array20_wind_speed}m/s</h5>
@@ -377,8 +367,7 @@ export function getHtml(
           <h4>${array22_day} - approx. ${array22_datetime.toLocaleTimeString()}</h4>
           <h3>${array22_temp_max}° / ${array22_temp_min}°</h3>
           <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array22_icon}.png">
-          <h4>${array22_weather}</h4> 
-          <h5>Approx. ${array22_temp}°</h5>
+          <h4>Approx. ${array22_temp}° with ${array22_weather}</h4>
        <h5>Feels like ${array22_feels_like}°</h5>
        <h5>Humidity ${array22_humidity}%</h5>
        <h5>Wind Speed ${array22_wind_speed}m/s</h5>
@@ -389,8 +378,7 @@ export function getHtml(
             <h4>${array24_day} - approx. ${array24_datetime.toLocaleTimeString()}</h4>
             <h3>${array24_temp_max}° / ${array24_temp_min}°</h3>
             <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array24_icon}.png">
-            <h4>${array24_weather}</h4> 
-            <h5>Approx. ${array24_temp}°</h5>
+            <h4>Approx. ${array24_temp}° with ${array24_weather}</h4>
        <h5>Feels like ${array24_feels_like}°</h5>
        <h5>Humidity ${array24_humidity}%</h5>
        <h5>Wind Speed ${array24_wind_speed}m/s</h5>
@@ -401,8 +389,7 @@ export function getHtml(
           <h4>${array26_day} - approx. ${array26_datetime.toLocaleTimeString()}</h4>
           <h3>${array26_temp_max}° / ${array26_temp_min}°</h3>
           <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array26_icon}.png">
-          <h4>${array26_weather}</h4> 
-          <h5>Approx. ${array26_temp}°</h5>
+          <h4>Approx. ${array26_temp}° with ${array26_weather}</h4>
        <h5>Feels like ${array26_feels_like}°</h5>
        <h5>Humidity ${array26_humidity}%</h5>
        <h5>Wind Speed ${array26_wind_speed}m/s</h5>
@@ -413,8 +400,7 @@ export function getHtml(
         <h4>${array28_day} - approx. ${array28_datetime.toLocaleTimeString()}</h4>
         <h3>${array28_temp_max}° / ${array28_temp_min}°</h3>
         <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array28_icon}.png">
-        <h4>${array28_weather}</h4> 
-        <h5>Approx. ${array28_temp}°</h5>
+        <h4>Approx. ${array28_temp}° with ${array28_weather}</h4>
        <h5>Feels like ${array28_feels_like}°</h5>
        <h5>Humidity ${array28_humidity}%</h5>
        <h5>Wind Speed ${array28_wind_speed}m/s</h5>
@@ -425,8 +411,7 @@ export function getHtml(
       <h4>${array30_day} - approx. ${array30_datetime.toLocaleTimeString()}</h4>
       <h3>${array30_temp_max}° / ${array30_temp_min}°</h3>
        <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array30_icon}.png">
-       <h4>${array30_weather}</h4>
-       <h5>Approx. ${array30_temp}°</h5>
+       <h4>Approx. ${array30_temp}° with ${array30_weather}</h4>
        <h5>Feels like ${array30_feels_like}°</h5>
        <h5>Humidity ${array30_humidity}%</h5>
        <h5>Wind Speed ${array30_wind_speed}m/s</h5>
@@ -437,8 +422,7 @@ export function getHtml(
             <h4>${array32_day} - approx. ${array32_datetime.toLocaleTimeString()}</h4>
             <h3>${array32_temp_max}° / ${array32_temp_min}°</h3>
              <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array32_icon}.png">
-             <h4>${array32_weather}</h4>
-             <h5>Approx. ${array32_temp}°</h5>
+             <h4>Approx. ${array32_temp}° with ${array32_weather}</h4>
        <h5>Feels like ${array32_feels_like}°</h5>
        <h5>Humidity ${array32_humidity}%</h5>
        <h5>Wind Speed ${array32_wind_speed}m/s</h5>
@@ -449,8 +433,7 @@ export function getHtml(
             <h4>${array34_day} - approx. ${array34_datetime.toLocaleTimeString()}</h4>
             <h3>${array34_temp_max}° / ${array34_temp_min}°</h3>
              <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array34_icon}.png">
-             <h4>${array34_weather}</h4>
-             <h5>Approx. ${array34_temp}°</h5>
+             <h4>Approx. ${array34_temp}° with ${array34_weather}</h4>
        <h5>Feels like ${array34_feels_like}°</h5>
        <h5>Humidity ${array34_humidity}%</h5>
        <h5>Wind Speed ${array34_wind_speed}m/s</h5>
@@ -461,8 +444,7 @@ export function getHtml(
             <h4>${array36_day} - approx. ${array36_datetime.toLocaleTimeString()}</h4>
             <h3>${array36_temp_max}° / ${array36_temp_min}°</h3>
              <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array36_icon}.png">
-             <h4>${array36_weather}</h4>
-             <h5>Approx. ${array36_temp}°</h5>
+             <h4>Approx. ${array36_temp}° with ${array36_weather}</h4>
        <h5>Feels like ${array36_feels_like}°</h5>
        <h5>Humidity ${array36_humidity}%</h5>
        <h5>Wind Speed ${array36_wind_speed}m/s</h5>
@@ -473,8 +455,7 @@ export function getHtml(
             <h4>${array38_day} - approx. ${array38_datetime.toLocaleTimeString()}</h4>
             <h3>${array38_temp_max}° / ${array38_temp_min}°</h3>
              <img class= "wf-icon" src = "https://openweathermap.org/img/wn/${array38_icon}.png">
-             <h4>${array38_weather}</h4>
-             <h5>Approx. ${array38_temp}°</h5>
+             <h4>Approx. ${array38_temp}° with ${array38_weather}</h4>
        <h5>Feels like ${array38_feels_like}°</h5>
        <h5>Humidity ${array38_humidity}%</h5>
        <h5>Wind Speed ${array38_wind_speed}m/s</h5>

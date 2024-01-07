@@ -25,7 +25,7 @@ a {
 #root {
   font-size: 1.5rem;
   text-align: center;
-  height: 115vh;
+  height: 120vh;
   padding: 5rem;
   display: flex;
   flex-direction: column;
@@ -134,15 +134,15 @@ span {
 .wf-0 {
   font-size: 1.5rem;
   text-align: center;
-  text-transform: uppercase;
-  width: 30rem;
+  width: 28rem;
   background-color: #f0a350;
   color: #000000;
   opacity: 70%;
-  padding: 0.5rem;
+  padding: 1.5rem;
   margin-bottom: 0.5rem;
   border: #40575cfe solid 1px;
   border-radius: 3rem;
+  line-height: 2.5rem;
 }
 
 a {
@@ -159,6 +159,7 @@ ul {
   width: 80vw;
   display: flex;
   flex-direction: row;
+  align-items: center;
   overflow-x: scroll;
   scroll-snap-type: x proximity;
 }
@@ -184,7 +185,6 @@ ul {
 .wf-38 {
   scroll-snap-align: center;
   flex-direction: column;
-  justify-content: center;
   padding: 0.5rem;
 }
 
@@ -207,12 +207,12 @@ ul {
 .wf-34,
 .wf-36,
 .wf-38 {
-  text-transform: uppercase;
   padding: 1rem;
-  height: 18rem;
+  height: 20rem;
   width: 15rem;
+  line-height: 2rem;
   margin-bottom: 1.5rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   border: #40575cfe solid 1px;
   background-color: #f0a350;
   opacity: 70%;
@@ -238,8 +238,8 @@ ul {
 .wf-34:focus-within,
 .wf-36:focus-within,
 .wf-38:focus-within {
-  height: 20rem;
-  width: 18rem;
+  height: 23rem;
+  width: 22rem;
 }
 
 .wf-2:focus-within h3,
@@ -374,6 +374,7 @@ footer p {
   }
   #root {
     font-size: 2.5rem;
+    height: 125vh;
   }
 }
 @media screen and (min-width: 1050px) {
