@@ -31,18 +31,18 @@ async function getWeather(latitude, longitude) {
     "Saturday",
   ];
   const month = [
-    "Jan",
-    "Feb",
+    "January",
+    "February",
     "March",
     "April",
     "May",
     "June",
     "July",
-    "Aug",
-    "Sept",
-    "Oct",
-    "Nov",
-    "Dec",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ];
 
   // Weather data [Array 0]
@@ -63,6 +63,19 @@ async function getWeather(latitude, longitude) {
   const humidityArray0 = data.list[0].main.humidity;
   const windSpeedArray0 = data.list[0].wind.speed;
 
+  // Weather data [Array 1]
+  const dateTime1 = data.list[1].dt_txt;
+  const dateTimeArray1 = new Date(dateTime1);
+  const day1 = weekday[dateTimeArray1.getDay()];
+  const tempMax1 = data.list[1].main.temp_max;
+  const tempMin1 = data.list[1].main.temp_min;
+  const weatherArray1 = data.list[1].weather[0].description;
+  const iconArray1 = data.list[1].weather[0].icon;
+  const tempArray1 = data.list[1].main.temp;
+  const feels_likeArray1 = data.list[1].main.feels_like;
+  const humidityArray1 = data.list[1].main.humidity;
+  const windSpeedArray1 = data.list[1].wind.speed;
+
   // Weather data [Array 2]
   const dateTime2 = data.list[2].dt_txt;
   const dateTimeArray2 = new Date(dateTime2);
@@ -76,6 +89,19 @@ async function getWeather(latitude, longitude) {
   const humidityArray2 = data.list[2].main.humidity;
   const windSpeedArray2 = data.list[2].wind.speed;
 
+  // Weather data [Array 3]
+  const dateTime3 = data.list[3].dt_txt;
+  const dateTimeArray3 = new Date(dateTime3);
+  const day3 = weekday[dateTimeArray3.getDay()];
+  const tempMax3 = data.list[3].main.temp_max;
+  const tempMin3 = data.list[3].main.temp_min;
+  const weatherArray3 = data.list[3].weather[0].description;
+  const iconArray3 = data.list[3].weather[0].icon;
+  const tempArray3 = data.list[3].main.temp;
+  const feels_likeArray3 = data.list[3].main.feels_like;
+  const humidityArray3 = data.list[3].main.humidity;
+  const windSpeedArray3 = data.list[3].wind.speed;
+
   // Weather data [Array 4]
   const dateTime4 = data.list[4].dt_txt;
   const dateTimeArray4 = new Date(dateTime4);
@@ -85,9 +111,22 @@ async function getWeather(latitude, longitude) {
   const weatherArray4 = data.list[4].weather[0].description;
   const iconArray4 = data.list[4].weather[0].icon;
   const tempArray4 = data.list[4].main.temp;
-  const feels_likeArray4 = data.list[2].main.feels_like;
+  const feels_likeArray4 = data.list[4].main.feels_like;
   const humidityArray4 = data.list[4].main.humidity;
   const windSpeedArray4 = data.list[4].wind.speed;
+
+  // Weather data [Array 5]
+  const dateTime5 = data.list[5].dt_txt;
+  const dateTimeArray5 = new Date(dateTime5);
+  const day5 = weekday[dateTimeArray5.getDay()];
+  const tempMax5 = data.list[5].main.temp_max;
+  const tempMin5 = data.list[5].main.temp_min;
+  const weatherArray5 = data.list[5].weather[0].description;
+  const iconArray5 = data.list[5].weather[0].icon;
+  const tempArray5 = data.list[5].main.temp;
+  const feels_likeArray5 = data.list[5].main.feels_like;
+  const humidityArray5 = data.list[5].main.humidity;
+  const windSpeedArray5 = data.list[5].wind.speed;
 
   // Weather data [Array 6]
   const dateTime6 = data.list[6].dt_txt;
@@ -102,6 +141,19 @@ async function getWeather(latitude, longitude) {
   const humidityArray6 = data.list[6].main.humidity;
   const windSpeedArray6 = data.list[6].wind.speed;
 
+  // Weather data [Array 7]
+  const dateTime7 = data.list[7].dt_txt;
+  const dateTimeArray7 = new Date(dateTime7);
+  const day7 = weekday[dateTimeArray7.getDay()];
+  const tempMax7 = data.list[7].main.temp_max;
+  const tempMin7 = data.list[7].main.temp_min;
+  const weatherArray7 = data.list[7].weather[0].description;
+  const iconArray7 = data.list[7].weather[0].icon;
+  const tempArray7 = data.list[7].main.temp;
+  const feels_likeArray7 = data.list[7].main.feels_like;
+  const humidityArray7 = data.list[7].main.humidity;
+  const windSpeedArray7 = data.list[7].wind.speed;
+
   // Weather data [Array 8]
   const dateTime8 = data.list[8].dt_txt;
   const dateTimeArray8 = new Date(dateTime8);
@@ -114,6 +166,19 @@ async function getWeather(latitude, longitude) {
   const feels_likeArray8 = data.list[8].main.feels_like;
   const humidityArray8 = data.list[8].main.humidity;
   const windSpeedArray8 = data.list[8].wind.speed;
+
+  // Weather data [Array 9]
+  const dateTime9 = data.list[9].dt_txt;
+  const dateTimeArray9 = new Date(dateTime9);
+  const day9 = weekday[dateTimeArray9.getDay()];
+  const tempMax9 = data.list[9].main.temp_max;
+  const tempMin9 = data.list[9].main.temp_min;
+  const weatherArray9 = data.list[9].weather[0].description;
+  const iconArray9 = data.list[9].weather[0].icon;
+  const tempArray9 = data.list[9].main.temp;
+  const feels_likeArray9 = data.list[9].main.feels_like;
+  const humidityArray9 = data.list[9].main.humidity;
+  const windSpeedArray9 = data.list[9].wind.speed;
 
   // Weather data [Array 10]
   const dateTime10 = data.list[10].dt_txt;
@@ -128,6 +193,19 @@ async function getWeather(latitude, longitude) {
   const humidityArray10 = data.list[10].main.humidity;
   const windSpeedArray10 = data.list[10].wind.speed;
 
+  // Weather data [Array 11]
+  const dateTime11 = data.list[11].dt_txt;
+  const dateTimeArray11 = new Date(dateTime11);
+  const day11 = weekday[dateTimeArray11.getDay()];
+  const tempMax11 = data.list[11].main.temp_max;
+  const tempMin11 = data.list[11].main.temp_min;
+  const weatherArray11 = data.list[11].weather[0].description;
+  const iconArray11 = data.list[11].weather[0].icon;
+  const tempArray11 = data.list[11].main.temp;
+  const feels_likeArray11 = data.list[11].main.feels_like;
+  const humidityArray11 = data.list[11].main.humidity;
+  const windSpeedArray11 = data.list[11].wind.speed;
+
   // Weather data [Array 12]
   const dateTime12 = data.list[12].dt_txt;
   const dateTimeArray12 = new Date(dateTime12);
@@ -140,6 +218,19 @@ async function getWeather(latitude, longitude) {
   const feels_likeArray12 = data.list[12].main.feels_like;
   const humidityArray12 = data.list[12].main.humidity;
   const windSpeedArray12 = data.list[12].wind.speed;
+
+  // Weather data [Array 13]
+  const dateTime13 = data.list[13].dt_txt;
+  const dateTimeArray13 = new Date(dateTime13);
+  const day13 = weekday[dateTimeArray13.getDay()];
+  const tempMax13 = data.list[13].main.temp_max;
+  const tempMin13 = data.list[13].main.temp_min;
+  const weatherArray13 = data.list[13].weather[0].description;
+  const iconArray13 = data.list[13].weather[0].icon;
+  const tempArray13 = data.list[13].main.temp;
+  const feels_likeArray13 = data.list[13].main.feels_like;
+  const humidityArray13 = data.list[13].main.humidity;
+  const windSpeedArray13 = data.list[13].wind.speed;
 
   // Weather data [Array 14]
   const dateTime14 = data.list[14].dt_txt;
@@ -154,6 +245,19 @@ async function getWeather(latitude, longitude) {
   const humidityArray14 = data.list[14].main.humidity;
   const windSpeedArray14 = data.list[14].wind.speed;
 
+  // Weather data [Array 15]
+  const dateTime15 = data.list[15].dt_txt;
+  const dateTimeArray15 = new Date(dateTime15);
+  const day15 = weekday[dateTimeArray15.getDay()];
+  const tempMax15 = data.list[15].main.temp_max;
+  const tempMin15 = data.list[15].main.temp_min;
+  const weatherArray15 = data.list[15].weather[0].description;
+  const iconArray15 = data.list[15].weather[0].icon;
+  const tempArray15 = data.list[15].main.temp;
+  const feels_likeArray15 = data.list[15].main.feels_like;
+  const humidityArray15 = data.list[15].main.humidity;
+  const windSpeedArray15 = data.list[15].wind.speed;
+
   // Weather data [Array 16]
   const dateTime16 = data.list[16].dt_txt;
   const dateTimeArray16 = new Date(dateTime16);
@@ -166,6 +270,19 @@ async function getWeather(latitude, longitude) {
   const feels_likeArray16 = data.list[16].main.feels_like;
   const humidityArray16 = data.list[16].main.humidity;
   const windSpeedArray16 = data.list[16].wind.speed;
+
+  // Weather data [Array 17]
+  const dateTime17 = data.list[17].dt_txt;
+  const dateTimeArray17 = new Date(dateTime17);
+  const day17 = weekday[dateTimeArray17.getDay()];
+  const tempMax17 = data.list[17].main.temp_max;
+  const tempMin17 = data.list[17].main.temp_min;
+  const weatherArray17 = data.list[17].weather[0].description;
+  const iconArray17 = data.list[17].weather[0].icon;
+  const tempArray17 = data.list[17].main.temp;
+  const feels_likeArray17 = data.list[17].main.feels_like;
+  const humidityArray17 = data.list[17].main.humidity;
+  const windSpeedArray17 = data.list[17].wind.speed;
 
   // Weather data [Array 18]
   const dateTime18 = data.list[18].dt_txt;
@@ -180,6 +297,19 @@ async function getWeather(latitude, longitude) {
   const humidityArray18 = data.list[18].main.humidity;
   const windSpeedArray18 = data.list[18].wind.speed;
 
+  // Weather data [Array 19]
+  const dateTime19 = data.list[19].dt_txt;
+  const dateTimeArray19 = new Date(dateTime19);
+  const day19 = weekday[dateTimeArray19.getDay()];
+  const tempMax19 = data.list[19].main.temp_max;
+  const tempMin19 = data.list[19].main.temp_min;
+  const weatherArray19 = data.list[19].weather[0].description;
+  const iconArray19 = data.list[19].weather[0].icon;
+  const tempArray19 = data.list[19].main.temp;
+  const feels_likeArray19 = data.list[19].main.feels_like;
+  const humidityArray19 = data.list[19].main.humidity;
+  const windSpeedArray19 = data.list[19].wind.speed;
+
   // Weather data [Array 20]
   const dateTime20 = data.list[20].dt_txt;
   const dateTimeArray20 = new Date(dateTime20);
@@ -192,6 +322,19 @@ async function getWeather(latitude, longitude) {
   const feels_likeArray20 = data.list[20].main.feels_like;
   const humidityArray20 = data.list[20].main.humidity;
   const windSpeedArray20 = data.list[20].wind.speed;
+
+  // Weather data [Array 21]
+  const dateTime21 = data.list[21].dt_txt;
+  const dateTimeArray21 = new Date(dateTime21);
+  const day21 = weekday[dateTimeArray21.getDay()];
+  const tempMax21 = data.list[21].main.temp_max;
+  const tempMin21 = data.list[21].main.temp_min;
+  const weatherArray21 = data.list[21].weather[0].description;
+  const iconArray21 = data.list[21].weather[0].icon;
+  const tempArray21 = data.list[21].main.temp;
+  const feels_likeArray21 = data.list[21].main.feels_like;
+  const humidityArray21 = data.list[21].main.humidity;
+  const windSpeedArray21 = data.list[21].wind.speed;
 
   // Weather data [Array 22]
   const dateTime22 = data.list[22].dt_txt;
@@ -206,109 +349,122 @@ async function getWeather(latitude, longitude) {
   const humidityArray22 = data.list[22].main.humidity;
   const windSpeedArray22 = data.list[22].wind.speed;
 
+  // Weather data [Array 23]
+  const dateTime23 = data.list[23].dt_txt;
+  const dateTimeArray23 = new Date(dateTime23);
+  const day23 = weekday[dateTimeArray23.getDay()];
+  const tempMax23 = data.list[23].main.temp_max;
+  const tempMin23 = data.list[23].main.temp_min;
+  const weatherArray23 = data.list[23].weather[0].description;
+  const iconArray23 = data.list[23].weather[0].icon;
+  const tempArray23 = data.list[23].main.temp;
+  const feels_likeArray23 = data.list[23].main.feels_like;
+  const humidityArray23 = data.list[23].main.humidity;
+  const windSpeedArray23 = data.list[23].wind.speed;
+
   // Weather data [Array 24]
-  const dateTime24 = data.list[24].dt_txt;
-  const dateTimeArray24 = new Date(dateTime24);
-  const day24 = weekday[dateTimeArray24.getDay()];
-  const tempMax24 = data.list[24].main.temp_max;
-  const tempMin24 = data.list[24].main.temp_min;
-  const weatherArray24 = data.list[24].weather[0].description;
-  const iconArray24 = data.list[24].weather[0].icon;
-  const tempArray24 = data.list[24].main.temp;
-  const feels_likeArray24 = data.list[24].main.feels_like;
-  const humidityArray24 = data.list[24].main.humidity;
-  const windSpeedArray24 = data.list[24].wind.speed;
+  // const dateTime24 = data.list[24].dt_txt;
+  // const dateTimeArray24 = new Date(dateTime24);
+  // const day24 = weekday[dateTimeArray24.getDay()];
+  // const tempMax24 = data.list[24].main.temp_max;
+  // const tempMin24 = data.list[24].main.temp_min;
+  // const weatherArray24 = data.list[24].weather[0].description;
+  // const iconArray24 = data.list[24].weather[0].icon;
+  // const tempArray24 = data.list[24].main.temp;
+  // const feels_likeArray24 = data.list[24].main.feels_like;
+  // const humidityArray24 = data.list[24].main.humidity;
+  // const windSpeedArray24 = data.list[24].wind.speed;
 
   // Weather data [Array 26]
-  const dateTime26 = data.list[26].dt_txt;
-  const dateTimeArray26 = new Date(dateTime26);
-  const day26 = weekday[dateTimeArray26.getDay()];
-  const tempMax26 = data.list[26].main.temp_max;
-  const tempMin26 = data.list[26].main.temp_min;
-  const weatherArray26 = data.list[26].weather[0].description;
-  const iconArray26 = data.list[26].weather[0].icon;
-  const tempArray26 = data.list[26].main.temp;
-  const feels_likeArray26 = data.list[26].main.feels_like;
-  const humidityArray26 = data.list[26].main.humidity;
-  const windSpeedArray26 = data.list[26].wind.speed;
+  // const dateTime26 = data.list[26].dt_txt;
+  // const dateTimeArray26 = new Date(dateTime26);
+  // const day26 = weekday[dateTimeArray26.getDay()];
+  // const tempMax26 = data.list[26].main.temp_max;
+  // const tempMin26 = data.list[26].main.temp_min;
+  // const weatherArray26 = data.list[26].weather[0].description;
+  // const iconArray26 = data.list[26].weather[0].icon;
+  // const tempArray26 = data.list[26].main.temp;
+  // const feels_likeArray26 = data.list[26].main.feels_like;
+  // const humidityArray26 = data.list[26].main.humidity;
+  // const windSpeedArray26 = data.list[26].wind.speed;
 
   // Weather data [Array 28]
-  const dateTime28 = data.list[28].dt_txt;
-  const dateTimeArray28 = new Date(dateTime28);
-  const day28 = weekday[dateTimeArray28.getDay()];
-  const tempMax28 = data.list[28].main.temp_max;
-  const tempMin28 = data.list[28].main.temp_min;
-  const weatherArray28 = data.list[28].weather[0].description;
-  const iconArray28 = data.list[28].weather[0].icon;
-  const tempArray28 = data.list[28].main.temp;
-  const feels_likeArray28 = data.list[28].main.feels_like;
-  const humidityArray28 = data.list[28].main.humidity;
-  const windSpeedArray28 = data.list[28].wind.speed;
+  // const dateTime28 = data.list[28].dt_txt;
+  // const dateTimeArray28 = new Date(dateTime28);
+  // const day28 = weekday[dateTimeArray28.getDay()];
+  // const tempMax28 = data.list[28].main.temp_max;
+  // const tempMin28 = data.list[28].main.temp_min;
+  // const weatherArray28 = data.list[28].weather[0].description;
+  // const iconArray28 = data.list[28].weather[0].icon;
+  // const tempArray28 = data.list[28].main.temp;
+  // const feels_likeArray28 = data.list[28].main.feels_like;
+  // const humidityArray28 = data.list[28].main.humidity;
+  // const windSpeedArray28 = data.list[28].wind.speed;
 
-  // Weather data [Array 30]
-  const dateTime30 = data.list[30].dt_txt;
-  const dateTimeArray30 = new Date(dateTime30);
-  const day30 = weekday[dateTimeArray30.getDay()];
-  const tempMax30 = data.list[30].main.temp_max;
-  const tempMin30 = data.list[30].main.temp_min;
-  const weatherArray30 = data.list[30].weather[0].description;
-  const iconArray30 = data.list[30].weather[0].icon;
-  const tempArray30 = data.list[30].main.temp;
-  const feels_likeArray30 = data.list[30].main.feels_like;
-  const humidityArray30 = data.list[30].main.humidity;
-  const windSpeedArray30 = data.list[30].wind.speed;
+  // // Weather data [Array 30]
+  // const dateTime30 = data.list[30].dt_txt;
+  // const dateTimeArray30 = new Date(dateTime30);
+  // const day30 = weekday[dateTimeArray30.getDay()];
+  // const tempMax30 = data.list[30].main.temp_max;
+  // const tempMin30 = data.list[30].main.temp_min;
+  // const weatherArray30 = data.list[30].weather[0].description;
+  // const iconArray30 = data.list[30].weather[0].icon;
+  // const tempArray30 = data.list[30].main.temp;
+  // const feels_likeArray30 = data.list[30].main.feels_like;
+  // const humidityArray30 = data.list[30].main.humidity;
+  // const windSpeedArray30 = data.list[30].wind.speed;
 
   // Weather data [Array 32]
-  const dateTime32 = data.list[32].dt_txt;
-  const dateTimeArray32 = new Date(dateTime32);
-  const day32 = weekday[dateTimeArray32.getDay()];
-  const tempMax32 = data.list[32].main.temp_max;
-  const tempMin32 = data.list[32].main.temp_min;
-  const weatherArray32 = data.list[32].weather[0].description;
-  const iconArray32 = data.list[32].weather[0].icon;
-  const tempArray32 = data.list[32].main.temp;
-  const feels_likeArray32 = data.list[32].main.feels_like;
-  const humidityArray32 = data.list[32].main.humidity;
-  const windSpeedArray32 = data.list[32].wind.speed;
+  // const dateTime32 = data.list[32].dt_txt;
+  // const dateTimeArray32 = new Date(dateTime32);
+  // const day32 = weekday[dateTimeArray32.getDay()];
+  // const tempMax32 = data.list[32].main.temp_max;
+  // const tempMin32 = data.list[32].main.temp_min;
+  // const weatherArray32 = data.list[32].weather[0].description;
+  // const iconArray32 = data.list[32].weather[0].icon;
+  // const tempArray32 = data.list[32].main.temp;
+  // const feels_likeArray32 = data.list[32].main.feels_like;
+  // const humidityArray32 = data.list[32].main.humidity;
+  // const windSpeedArray32 = data.list[32].wind.speed;
 
   // Weather data [Array 34]
-  const dateTime34 = data.list[34].dt_txt;
-  const dateTimeArray34 = new Date(dateTime34);
-  const day34 = weekday[dateTimeArray34.getDay()];
-  const tempMax34 = data.list[34].main.temp_max;
-  const tempMin34 = data.list[34].main.temp_min;
-  const weatherArray34 = data.list[34].weather[0].description;
-  const iconArray34 = data.list[34].weather[0].icon;
-  const tempArray34 = data.list[34].main.temp;
-  const feels_likeArray34 = data.list[34].main.feels_like;
-  const humidityArray34 = data.list[34].main.humidity;
-  const windSpeedArray34 = data.list[34].wind.speed;
+  // const dateTime34 = data.list[34].dt_txt;
+  // const dateTimeArray34 = new Date(dateTime34);
+  // const day34 = weekday[dateTimeArray34.getDay()];
+  // const tempMax34 = data.list[34].main.temp_max;
+  // const tempMin34 = data.list[34].main.temp_min;
+  // const weatherArray34 = data.list[34].weather[0].description;
+  // const iconArray34 = data.list[34].weather[0].icon;
+  // const tempArray34 = data.list[34].main.temp;
+  // const feels_likeArray34 = data.list[34].main.feels_like;
+  // const humidityArray34 = data.list[34].main.humidity;
+  // const windSpeedArray34 = data.list[34].wind.speed;
 
   // Weather data [Array 36]
-  const dateTime36 = data.list[36].dt_txt;
-  const dateTimeArray36 = new Date(dateTime36);
-  const day36 = weekday[dateTimeArray36.getDay()];
-  const tempMax36 = data.list[36].main.temp_max;
-  const tempMin36 = data.list[36].main.temp_min;
-  const weatherArray36 = data.list[36].weather[0].description;
-  const iconArray36 = data.list[36].weather[0].icon;
-  const tempArray36 = data.list[36].main.temp;
-  const feels_likeArray36 = data.list[36].main.feels_like;
-  const humidityArray36 = data.list[36].main.humidity;
-  const windSpeedArray36 = data.list[36].wind.speed;
+  // const dateTime36 = data.list[36].dt_txt;
+  // const dateTimeArray36 = new Date(dateTime36);
+  // const day36 = weekday[dateTimeArray36.getDay()];
+  // const tempMax36 = data.list[36].main.temp_max;
+  // const tempMin36 = data.list[36].main.temp_min;
+  // const weatherArray36 = data.list[36].weather[0].description;
+  // const iconArray36 = data.list[36].weather[0].icon;
+  // const tempArray36 = data.list[36].main.temp;
+  // const feels_likeArray36 = data.list[36].main.feels_like;
+  // const humidityArray36 = data.list[36].main.humidity;
+  // const windSpeedArray36 = data.list[36].wind.speed;
 
   // Weather data [Array 38]
-  const dateTime38 = data.list[38].dt_txt;
-  const dateTimeArray38 = new Date(dateTime38);
-  const day38 = weekday[dateTimeArray38.getDay()];
-  const tempMax38 = data.list[38].main.temp_max;
-  const tempMin38 = data.list[38].main.temp_min;
-  const weatherArray38 = data.list[38].weather[0].description;
-  const iconArray38 = data.list[38].weather[0].icon;
-  const tempArray38 = data.list[38].main.temp;
-  const feels_likeArray38 = data.list[38].main.feels_like;
-  const humidityArray38 = data.list[38].main.humidity;
-  const windSpeedArray38 = data.list[38].wind.speed;
+  // const dateTime38 = data.list[38].dt_txt;
+  // const dateTimeArray38 = new Date(dateTime38);
+  // const day38 = weekday[dateTimeArray38.getDay()];
+  // const tempMax38 = data.list[38].main.temp_max;
+  // const tempMin38 = data.list[38].main.temp_min;
+  // const weatherArray38 = data.list[38].weather[0].description;
+  // const iconArray38 = data.list[38].weather[0].icon;
+  // const tempArray38 = data.list[38].main.temp;
+  // const feels_likeArray38 = data.list[38].main.feels_like;
+  // const humidityArray38 = data.list[38].main.humidity;
+  // const windSpeedArray38 = data.list[38].wind.speed;
 
   rootRef.innerHTML = getHtml(
     printCountry,
@@ -331,6 +487,18 @@ async function getWeather(latitude, longitude) {
     humidityArray0,
     windSpeedArray0,
 
+    //Array1 data
+    dateTimeArray1,
+    day1,
+    tempMax1,
+    tempMin1,
+    weatherArray1,
+    iconArray1,
+    tempArray1,
+    feels_likeArray1,
+    humidityArray1,
+    windSpeedArray1,
+
     //Array2 data
     dateTimeArray2,
     day2,
@@ -342,6 +510,18 @@ async function getWeather(latitude, longitude) {
     feels_likeArray2,
     humidityArray2,
     windSpeedArray2,
+
+    //Array3 data
+    dateTimeArray3,
+    day3,
+    tempMax3,
+    tempMin3,
+    weatherArray3,
+    iconArray3,
+    tempArray3,
+    feels_likeArray3,
+    humidityArray3,
+    windSpeedArray3,
 
     //Array4 data
     dateTimeArray4,
@@ -355,6 +535,18 @@ async function getWeather(latitude, longitude) {
     humidityArray4,
     windSpeedArray4,
 
+    //Array5 data
+    dateTimeArray5,
+    day5,
+    tempMax5,
+    tempMin5,
+    weatherArray5,
+    iconArray5,
+    tempArray5,
+    feels_likeArray5,
+    humidityArray5,
+    windSpeedArray5,
+
     //Array6 data
     dateTimeArray6,
     day6,
@@ -366,6 +558,18 @@ async function getWeather(latitude, longitude) {
     feels_likeArray6,
     humidityArray6,
     windSpeedArray6,
+
+    //Array7 data
+    dateTimeArray7,
+    day7,
+    tempMax7,
+    tempMin7,
+    weatherArray7,
+    iconArray7,
+    tempArray7,
+    feels_likeArray7,
+    humidityArray7,
+    windSpeedArray7,
 
     //Array8 data
     dateTimeArray8,
@@ -379,6 +583,18 @@ async function getWeather(latitude, longitude) {
     humidityArray8,
     windSpeedArray8,
 
+    //Array9 data
+    dateTimeArray9,
+    day9,
+    tempMax9,
+    tempMin9,
+    weatherArray9,
+    iconArray9,
+    tempArray9,
+    feels_likeArray9,
+    humidityArray9,
+    windSpeedArray9,
+
     //Array10 data
     dateTimeArray10,
     day10,
@@ -390,6 +606,18 @@ async function getWeather(latitude, longitude) {
     feels_likeArray10,
     humidityArray10,
     windSpeedArray10,
+
+    //Array11 data
+    dateTimeArray11,
+    day11,
+    tempMax11,
+    tempMin11,
+    weatherArray11,
+    iconArray11,
+    tempArray11,
+    feels_likeArray11,
+    humidityArray11,
+    windSpeedArray11,
 
     //Array12 data
     dateTimeArray12,
@@ -403,6 +631,18 @@ async function getWeather(latitude, longitude) {
     humidityArray12,
     windSpeedArray12,
 
+    //Array13 data
+    dateTimeArray13,
+    day13,
+    tempMax13,
+    tempMin13,
+    weatherArray13,
+    iconArray13,
+    tempArray13,
+    feels_likeArray13,
+    humidityArray13,
+    windSpeedArray13,
+
     //Array14 data
     dateTimeArray14,
     day14,
@@ -414,6 +654,18 @@ async function getWeather(latitude, longitude) {
     feels_likeArray14,
     humidityArray14,
     windSpeedArray14,
+
+    //Array15 data
+    dateTimeArray15,
+    day15,
+    tempMax15,
+    tempMin15,
+    weatherArray15,
+    iconArray15,
+    tempArray15,
+    feels_likeArray15,
+    humidityArray15,
+    windSpeedArray15,
 
     //Array16 data
     dateTimeArray16,
@@ -427,6 +679,18 @@ async function getWeather(latitude, longitude) {
     humidityArray16,
     windSpeedArray16,
 
+    //Array17 data
+    dateTimeArray17,
+    day17,
+    tempMax17,
+    tempMin17,
+    weatherArray17,
+    iconArray17,
+    tempArray17,
+    feels_likeArray17,
+    humidityArray17,
+    windSpeedArray17,
+
     //Array18 data
     dateTimeArray18,
     day18,
@@ -438,6 +702,18 @@ async function getWeather(latitude, longitude) {
     feels_likeArray18,
     humidityArray18,
     windSpeedArray18,
+
+    //Array19 data
+    dateTimeArray19,
+    day19,
+    tempMax19,
+    tempMin19,
+    weatherArray19,
+    iconArray19,
+    tempArray19,
+    feels_likeArray19,
+    humidityArray19,
+    windSpeedArray19,
 
     //Array20 data
     dateTimeArray20,
@@ -451,6 +727,18 @@ async function getWeather(latitude, longitude) {
     humidityArray20,
     windSpeedArray20,
 
+    //Array21 data
+    dateTimeArray21,
+    day21,
+    tempMax21,
+    tempMin21,
+    weatherArray21,
+    iconArray21,
+    tempArray21,
+    feels_likeArray21,
+    humidityArray21,
+    windSpeedArray21,
+
     //Array22 data
     dateTimeArray22,
     day22,
@@ -463,101 +751,113 @@ async function getWeather(latitude, longitude) {
     humidityArray22,
     windSpeedArray22,
 
+    //Array23 data
+    dateTimeArray23,
+    day23,
+    tempMax23,
+    tempMin23,
+    weatherArray23,
+    iconArray23,
+    tempArray23,
+    feels_likeArray23,
+    humidityArray23,
+    windSpeedArray23
+
     //Array24 data
-    dateTimeArray24,
-    day24,
-    tempMax24,
-    tempMin24,
-    weatherArray24,
-    iconArray24,
-    tempArray24,
-    feels_likeArray24,
-    humidityArray24,
-    windSpeedArray24,
+    // dateTimeArray24,
+    // day24,
+    // tempMax24,
+    // tempMin24,
+    // weatherArray24,
+    // iconArray24,
+    // tempArray24,
+    // feels_likeArray24,
+    // humidityArray24,
+    // windSpeedArray24,
 
     //Array26 data
-    dateTimeArray26,
-    day26,
-    tempMax26,
-    tempMin26,
-    weatherArray26,
-    iconArray26,
-    tempArray26,
-    feels_likeArray26,
-    humidityArray26,
-    windSpeedArray26,
+    // dateTimeArray26,
+    // day26,
+    // tempMax26,
+    // tempMin26,
+    // weatherArray26,
+    // iconArray26,
+    // tempArray26,
+    // feels_likeArray26,
+    // humidityArray26,
+    // windSpeedArray26,
 
     //Array28 data
-    dateTimeArray28,
-    day28,
-    tempMax28,
-    tempMin28,
-    weatherArray28,
-    iconArray28,
-    tempArray28,
-    feels_likeArray28,
-    humidityArray28,
-    windSpeedArray28,
+    // dateTimeArray28,
+    // day28,
+    // tempMax28,
+    // tempMin28,
+    // weatherArray28,
+    // iconArray28,
+    // tempArray28,
+    // feels_likeArray28,
+    // humidityArray28,
+    // windSpeedArray28,
 
     //Array30 data
-    dateTimeArray30,
-    day30,
-    tempMax30,
-    tempMin30,
-    weatherArray30,
-    iconArray30,
-    tempArray30,
-    feels_likeArray30,
-    humidityArray30,
-    windSpeedArray30,
+    // dateTimeArray30,
+    // day30,
+    // tempMax30,
+    // tempMin30,
+    // weatherArray30,
+    // iconArray30,
+    // tempArray30,
+    // feels_likeArray30,
+    // humidityArray30,
+    // windSpeedArray30,
 
     //Array32 data
-    dateTimeArray32,
-    day32,
-    tempMax32,
-    tempMin32,
-    weatherArray32,
-    iconArray32,
-    tempArray32,
-    feels_likeArray32,
-    humidityArray32,
-    windSpeedArray32,
+    // dateTimeArray32,
+    // day32,
+    // tempMax32,
+    // tempMin32,
+    // weatherArray32,
+    // iconArray32,
+    // tempArray32,
+    // feels_likeArray32,
+    // humidityArray32,
+    // windSpeedArray32,
 
     //Array34 data
-    dateTimeArray34,
-    day34,
-    tempMax34,
-    tempMin34,
-    weatherArray34,
-    iconArray34,
-    tempArray34,
-    feels_likeArray34,
-    humidityArray34,
-    windSpeedArray34,
+    // dateTimeArray34,
+    // day34,
+    // tempMax34,
+    // tempMin34,
+    // weatherArray34,
+    // iconArray34,
+    // tempArray34,
+    // feels_likeArray34,
+    // humidityArray34,
+    // windSpeedArray34,
 
     //Array36 data
-    dateTimeArray36,
-    day36,
-    tempMax36,
-    tempMin36,
-    weatherArray36,
-    iconArray36,
-    tempArray36,
-    feels_likeArray36,
-    humidityArray36,
-    windSpeedArray36,
+    // dateTimeArray36,
+    // day36,
+    // tempMax36,
+    // tempMin36,
+    // weatherArray36,
+    // iconArray36,
+    // tempArray36,
+    // feels_likeArray36,
+    // humidityArray36,
+    // windSpeedArray36,
 
     //Array38 data
-    dateTimeArray38,
-    day38,
-    tempMax38,
-    tempMin38,
-    weatherArray38,
-    iconArray38,
-    tempArray38,
-    feels_likeArray38,
-    humidityArray38,
-    windSpeedArray38
+    // dateTimeArray38,
+    // day38,
+    // tempMax38,
+    // tempMin38,
+    // weatherArray38,
+    // iconArray38,
+    // tempArray38,
+    // feels_likeArray38,
+    // humidityArray38,
+    // windSpeedArray38
   );
 }
 
